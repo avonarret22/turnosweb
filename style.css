@@ -1,0 +1,985 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+body {
+    font-family:'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container{
+
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+
+.header {
+    background-color: #FAFAFA;
+    padding: 50px 0; /* Espacio reducido */
+    min-height: auto; /* Evita forzar un 70% de altura */
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #323232;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #02B1F4;
+
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #02B1F4;
+    text-transform: uppercase;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    width: 50%;
+}
+
+.header-txt h1 {
+    line-height: 1;
+    color: #323232;
+    text-transform: uppercase;
+    font-size: 75px;
+    margin-bottom: 10px;
+}
+
+.header-txt p {
+    font-size: 16px;
+    color: #818181;
+    margin-bottom: 45px;
+}
+
+.header-img {
+    width: 50%;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #02B1F4;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.about { 
+    padding: 100px 0;
+    display: flex;
+
+}
+
+.about-img {
+    width: 50%;
+}
+
+.about-img img {
+    width: 500px;
+    border-radius: 15px;
+}
+.about-txt {
+    width: 50%;
+    margin-left: 25px;
+}
+
+.about-txt h2 {
+    color: #323232;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.about-txt p {
+    font-size: 16px;
+    color: #818181;   
+}
+
+.servicios {
+   padding: 50px 0 100px 0;
+   text-align: center;
+   background-color: #FAFAFA;
+}
+
+.servicios h2 {
+    color: #323232;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.servicios-content {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicio-1 {
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(25% - 20px);
+}
+
+.servicio-1 i {
+    font-size: 30px;
+    color: #02B1F4;
+    margin-bottom: 15px;
+}
+
+.servicio-1 h3 {
+    font-size: 20px;
+    color: #323232;
+    text-transform: capitalize;
+}
+
+.formulario {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 50px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+form h2 {
+    font-size: 25px;
+    color: #323232;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container > i {
+    padding: 14px;
+    border-radius: 50%;
+    background-color: #02B1F4;
+    color: #FFFFFF;
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: 10px;
+
+}
+
+.input-container > input, textarea {
+    padding: 17px 15px 17px 65px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background-color: transparent;
+    border: 2px solid #02B1F4;
+    font-size: 16px;
+    outline: none;
+    color: #323232;
+}
+
+textarea {
+    font-family: 'Poppins', sans-serif;
+    height: 150px;
+}
+
+::placeholder {
+    color: #a0a0a0;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #02B1F4;
+    padding: 17px 30px;
+    width: 100%;
+    border: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 50px;
+    background-color: #FAFAFA;
+}
+
+.footer-content {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link ul {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link ul li {
+    margin-right: 50px;
+}
+
+.link ul li a {
+    color: #323232;
+    font-size: 17px;
+}
+
+.link ul li a:hover {
+    color: #02B1F4;
+}
+
+@media (max-width:991px) {
+    
+    .menu {
+        padding: 20px;
+    }
+    
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+        padding: 80px 30px 50px 30px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+    }
+    
+    .header-txt {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .header-img {
+        width: 100%;
+    }
+
+    .header-img img {
+        width: 100%;
+    }
+
+    .about {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .about-img {
+        width: 100%;
+        order: 2;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    .about-text {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .servicios {
+        padding: 30px;
+    }
+
+    .servicios-content {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+    .servicio-1 {
+        margin-bottom: 20px;
+    }
+    
+    .formulario {
+        padding: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link ul {
+        flex-direction: column;
+    }
+
+    .link ul li {
+        margin: 0 0 15px 0;
+    }
+    
+
+}
+
+/* Estilos para el Footer */
+.footer {
+    background-color: #FAFAFA;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left p {
+    font-size: 14px;
+    color: #818181;
+}
+
+.footer-right ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer-right ul li {
+    margin-right: 20px;
+}
+
+.footer-right ul li a {
+    font-size: 14px;
+    color: #02B1F4;
+    text-decoration: none;
+}
+
+.footer-right ul li a:hover {
+    color: #323232;
+}
+
+@media (max-width: 991px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-right ul li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilo para la sección de Turnos */
+.turnos {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f7f7f77e;  
+}
+
+.turno-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(231, 224, 224, 0.055);
+    border-radius: 10px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.turno-form .input-container {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.turno-form input, .turno-form select {
+    padding: 15px 10px 15px 60px;  
+    width: 100%;
+    border-radius: 35px;
+    background-color: transparent;
+    border: 2px solid #02B1F4;
+    font-size: 16px;
+    outline: none;
+    color: #323232;
+    box-sizing: border-box; 
+}
+
+.turno-form select {
+    padding-left: 50px; 
+}
+
+/* Ajuste para el ícono dentro del campo */
+.turno-form .input-container > i {
+    position: absolute;
+    left: 5px;  
+    top: 35%;
+    transform: translateY(-50%); 
+    font-size: 10px;  
+    color: #02B1F4;
+}
+
+
+.turno-form input::placeholder, .turno-form select {
+    padding-left: 100px; 
+}
+
+.turno-form input[type="submit"] {
+    background-color: #02B1F4;
+    color: #ffffff;
+    padding: 17px 30px;
+    border: 0;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(247, 241, 241, 0);
+    width: 100%;
+}
+
+.turno-form input[type="submit"]:hover {
+    background-color: #026ab3;
+}
+
+@media (max-width: 991px) {
+    .turno-form {
+        width: 90%;
+    }
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  
+    align-items: center;
+    padding: 20px;  
+    margin-top: 0;  
+    min-height: 100vh; 
+}
+
+/* Ajustes del formulario */
+.contacto form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;  
+}
+
+/* Ajustes del cuadro de información */
+.contacto .info-contacto {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;  
+}
+
+/* Estilo solo para la página de contacto */
+/* Estilo para el header y nav en contacto.html */
+.contact-page .header {
+    all: unset;  /* Restablece los estilos heredados solo en esta página */
+    position: relative;  
+    z-index: 10;         
+    padding: 50px 0;     
+    margin: 0;           
+    background-color: #ffffff;  
+}
+
+/* Estilo para el menu del nav en contacto.html */
+.contact-page .header .menu {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;  
+}
+
+/* Alineación de los elementos del nav en contacto.html */
+.contact-page .header .navbar ul {
+    display: flex;
+    justify-content: flex-start; 
+    padding: 0;
+    margin: 0;
+}
+
+.contact-page .header .navbar ul li {
+    margin-right: 20px;  
+}
+
+.contact-page .header .navbar ul li a {
+    font-size: 18px;
+    color: #323232;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.contact-page .header .navbar ul li a:hover {
+    color: #02B1F4;
+}
+
+/* Estilo para el menu del nav en turnos.html, registro.html, login.html */
+.turnos-page .header .menu,
+.registro-page .header .menu,
+.login-page .header .menu {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;  
+}
+
+/* Alineación de los elementos del nav en turnos, registro, login */
+.turnos-page .header .navbar ul,
+.registro-page .header .navbar ul,
+.login-page .header .navbar ul {
+    display: flex;
+    justify-content: flex-start;  
+    padding: 0;
+    margin: 0;
+}
+
+.turnos-page .header .navbar ul li,
+.registro-page .header .navbar ul li,
+.login-page .header .navbar ul li {
+    margin-right: 20px;  
+}
+
+.turnos-page .header .navbar ul li a,
+.registro-page .header .navbar ul li a,
+.login-page .header .navbar ul li a {
+    font-size: 18px;
+    color: #323232;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.turnos-page .header .navbar ul li a:hover,
+.registro-page .header .navbar ul li a:hover,
+.login-page .header .navbar ul li a:hover {
+    color: #02B1F4;
+}
+
+/* Estilo específico para el header de cada página */
+.turnos-page .header,
+.registro-page .header,
+.login-page .header {
+    all: unset;  /* Restablece los estilos heredados */
+    position: relative;  
+    z-index: 10;
+    padding: 50px 0;     
+    margin: 0;         
+    background-color: #ffffff;  
+}
+
+
+.turnos-page, .registro-page, .login-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+}
+
+footer.footer {
+    margin-top: auto;  
+}
+
+/* Asegura que los estilos solo se apliquen a las páginas de privacidad y términos */
+body.privacidad-page, body.terminos-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    min-height: 100vh;  
+}
+
+/* Centra el contenido de las páginas de privacidad y términos */
+body.privacidad-page .privacidad, body.terminos-page .terminos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo para el cuadro de información */
+body.privacidad-page .info-box, body.terminos-page .info-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;  /* Limita el ancho para que no quede demasiado grande */
+    max-width: 600px;  /* Ancho máximo */
+    margin-bottom: 20px;
+}
+
+/* Estilo para el botón "Regresar al Inicio" */
+body.privacidad-page .btn-1, body.terminos-page .btn-1 {
+    padding: 10px 20px;
+    background-color: #00bfff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 20px;
+}
+/* Contenedor de formularios */
+.form-container {
+    background: #fff; /* Fondo blanco */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de formulario */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Campos de entrada */
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input,
+.input-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    font-size: 16px;
+}
+
+.input-container input:focus,
+.input-container select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Iconos dentro de input */
+.input-container i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #007bff;
+    font-size: 18px;
+}
+
+.input-container input,
+.input-container select {
+    padding-left: 35px; /* Espacio para el ícono */
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Alertas amigables */
+.alert {
+    background-color: #f8d7da; /* Fondo rojo claro */
+    color: #721c24; /* Texto rojo oscuro */
+    padding: 15px;
+    border: 1px solid #f5c6cb; /* Borde más oscuro */
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    font-size: 16px;
+}
+
+.alert a {
+    color: #721c24; /* Mismo color que el texto */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.alert a:hover {
+    color: #491217; /* Color más oscuro al pasar el mouse */
+    text-decoration: none;
+}
+
+/* Eliminar márgenes y padding globales */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajustar el header */
+header {
+    margin-bottom: 10px; /* Ajusta este valor según lo necesites */
+}
+
+/* Ajustar los márgenes del contenedor principal */
+.container, section {
+    margin-top: 0; /* Elimina el margen superior si existe */
+    padding-top: 0; /* Opcional: ajusta el padding si es necesario */
+}
+
+/* Solución específica si el espacio está en el primer contenedor */
+main, .content {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Ajuste para h2 o títulos si tienen márgenes adicionales */
+h2, h3 {
+    margin-top: 10px; /* Reduce el margen superior de los títulos */
+    padding-top: 0;
+}
+/* ==== General Styles for Admin and User Panels ==== */
+.panel-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1100px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.panel-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.panel-container h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #555;
+    border-bottom: 2px solid #02B1F4;
+    display: inline-block;
+}
+
+/* ==== Form Styles ==== */
+.panel-container form {
+    margin-bottom: 20px;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.panel-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #444;
+}
+
+.panel-container input,
+.panel-container select,
+.panel-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.panel-container input[type="submit"] {
+    background-color: #02B1F4;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.panel-container input[type="submit"]:hover {
+    background-color: #0280c7;
+}
+
+/* ==== Table Styles ==== */
+.panel-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.panel-container table th,
+.panel-container table td {
+    padding: 10px 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.panel-container table th {
+    background-color: #02B1F4;
+    color: white;
+    font-weight: 600;
+}
+
+.panel-container table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.panel-container table tr:hover {
+    background-color: #d1ecf1;
+}
+
+/* ==== Button Links ==== */
+.panel-container a.btn-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #dc3545;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.panel-container a.btn-link:hover {
+    background-color: #c82333;
+}
+
+/* ==== Messages Section ==== */
+.message-box {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.message-box h4 {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.message-box p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.message-box strong {
+    color: #333;
+}
